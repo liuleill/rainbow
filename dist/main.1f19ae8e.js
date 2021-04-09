@@ -153,7 +153,11 @@ level2.addEventListener('click', fm, false);
 level3.addEventListener('click', fn, true);
 level3.addEventListener('click', fm, false);
 level4.addEventListener('click', fn, true);
-level4.addEventListener('click', fm, false);
+level4.addEventListener('click', function (e) {
+  //举例说明，阻止冒泡stopPropagation()
+  e.stopPropagation();
+  fm(e);
+}, false);
 level5.addEventListener('click', fn, true);
 level5.addEventListener('click', fm, false);
 level6.addEventListener('click', fn, true);
