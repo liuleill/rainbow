@@ -124,109 +124,42 @@ var level3 = document.querySelector('.level3');
 var level4 = document.querySelector('.level4');
 var level5 = document.querySelector('.level5');
 var level6 = document.querySelector('.level6');
-var level7 = document.querySelector('.level7'); //先捕获后冒泡
-//捕获是从外层向内层走，有就执行，true
-//冒泡是从内层向外层走，false或者不写
+var level7 = document.querySelector('.level7'); //捕获是从外层向内层走，有就执行，true
+//冒泡是从内层向外层走，有就执行，false或者不写
+//先捕获后冒泡
 
 var n = 1;
-level1.addEventListener('click', function (e) {
+
+var fn = function fn(e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, true);
-level1.addEventListener('click', function (e) {
+};
+
+var fm = function fm(e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, false);
-level2.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level2.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
-level3.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level3.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
-level4.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level4.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
-level5.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level5.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
-level6.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level6.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
-level7.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.remove('x');
-  }, 1000 * n);
-  n += 1;
-}, true);
-level7.addEventListener('click', function (e) {
-  var t = e.currentTarget;
-  setTimeout(function () {
-    t.classList.add('x');
-  }, 1000 * n);
-  n += 1;
-}, false);
+};
+
+level1.addEventListener('click', fn, true);
+level1.addEventListener('click', fm, false);
+level2.addEventListener('click', fn, true);
+level2.addEventListener('click', fm, false);
+level3.addEventListener('click', fn, true);
+level3.addEventListener('click', fm, false);
+level4.addEventListener('click', fn, true);
+level4.addEventListener('click', fm, false);
+level5.addEventListener('click', fn, true);
+level5.addEventListener('click', fm, false);
+level6.addEventListener('click', fn, true);
+level6.addEventListener('click', fm, false);
+level7.addEventListener('click', fn, true);
+level7.addEventListener('click', fm, false);
 },{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -255,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57203" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61903" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
