@@ -5,9 +5,11 @@ const level4 = document.querySelector('.level4')
 const level5 = document.querySelector('.level5')
 const level6 = document.querySelector('.level6')
 const level7 = document.querySelector('.level7')
+//先捕获后冒泡
+//捕获是从外层向内层走，有就执行，true
+//冒泡是从内层向外层走，false或者不写
 
 let n = 1
-
 level1.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
@@ -15,6 +17,13 @@ level1.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level1.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+        t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
 
 level2.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -23,6 +32,13 @@ level2.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level2.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+        t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
 
 level3.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -31,6 +47,13 @@ level3.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level3.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+      t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
 
 level4.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -39,6 +62,13 @@ level4.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level4.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+        t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
 
 level5.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -47,6 +77,13 @@ level5.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level5.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+       t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
 
 level6.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -55,6 +92,14 @@ level6.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level6.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+       t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)
+
 
 level7.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -63,3 +108,10 @@ level7.addEventListener('click',(e)=>{
     },1000*n)
    n += 1
 },false)
+level7.addEventListener('click',(e)=>{
+    const t = e.currentTarget
+    setTimeout(()=>{
+        t.classList.add('x')
+    },1000*n)
+   n += 1
+},true)

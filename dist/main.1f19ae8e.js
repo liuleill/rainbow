@@ -124,9 +124,26 @@ var level3 = document.querySelector('.level3');
 var level4 = document.querySelector('.level4');
 var level5 = document.querySelector('.level5');
 var level6 = document.querySelector('.level6');
-var level7 = document.querySelector('.level7');
+var level7 = document.querySelector('.level7'); //先捕获后冒泡
+//捕获是从外层向内层走，有就执行，true
+//冒泡是从内层向外层走，false或者不写
+
 var n = 1;
 level1.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
+    t.classList.remove('x');
+  }, 1000 * n);
+  n += 1;
+}, false);
+level1.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
+level2.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
@@ -136,11 +153,25 @@ level1.addEventListener('click', function (e) {
 level2.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
+level3.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
 }, false);
 level3.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
+level4.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
@@ -150,11 +181,25 @@ level3.addEventListener('click', function (e) {
 level4.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
+level5.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
 }, false);
 level5.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
+level6.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
@@ -164,10 +209,10 @@ level5.addEventListener('click', function (e) {
 level6.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
-    t.classList.remove('x');
+    t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level7.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
@@ -175,6 +220,13 @@ level7.addEventListener('click', function (e) {
   }, 1000 * n);
   n += 1;
 }, false);
+level7.addEventListener('click', function (e) {
+  var t = e.currentTarget;
+  setTimeout(function () {
+    t.classList.add('x');
+  }, 1000 * n);
+  n += 1;
+}, true);
 },{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
