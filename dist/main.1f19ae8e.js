@@ -135,98 +135,98 @@ level1.addEventListener('click', function (e) {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level1.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level2.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level2.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level3.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level3.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level4.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level4.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level5.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level5.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level6.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level6.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 level7.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.remove('x');
   }, 1000 * n);
   n += 1;
-}, false);
+}, true);
 level7.addEventListener('click', function (e) {
   var t = e.currentTarget;
   setTimeout(function () {
     t.classList.add('x');
   }, 1000 * n);
   n += 1;
-}, true);
+}, false);
 },{}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

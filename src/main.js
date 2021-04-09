@@ -16,14 +16,14 @@ level1.addEventListener('click',(e)=>{
         t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level1.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
         t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 level2.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -31,14 +31,14 @@ level2.addEventListener('click',(e)=>{
         t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level2.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
         t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 level3.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -46,14 +46,14 @@ level3.addEventListener('click',(e)=>{
       t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level3.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
       t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 level4.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -61,14 +61,14 @@ level4.addEventListener('click',(e)=>{
         t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level4.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
         t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 level5.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -76,14 +76,14 @@ level5.addEventListener('click',(e)=>{
        t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level5.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
        t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 level6.addEventListener('click',(e)=>{
     const t = e.currentTarget
@@ -91,14 +91,14 @@ level6.addEventListener('click',(e)=>{
        t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level6.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
        t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
 
 
 level7.addEventListener('click',(e)=>{
@@ -107,11 +107,11 @@ level7.addEventListener('click',(e)=>{
         t.classList.remove('x')
     },1000*n)
    n += 1
-},false)
+},true)
 level7.addEventListener('click',(e)=>{
     const t = e.currentTarget
     setTimeout(()=>{
         t.classList.add('x')
     },1000*n)
    n += 1
-},true)
+},false)
